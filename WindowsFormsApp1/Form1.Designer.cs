@@ -70,7 +70,7 @@
             // textBoxFIO
             // 
             this.textBoxFIO.Font = new System.Drawing.Font("Calibri", 10F);
-            this.textBoxFIO.Location = new System.Drawing.Point(6, 98);
+            this.textBoxFIO.Location = new System.Drawing.Point(15, 98);
             this.textBoxFIO.MaxLength = 150;
             this.textBoxFIO.Name = "textBoxFIO";
             this.textBoxFIO.Size = new System.Drawing.Size(547, 24);
@@ -89,7 +89,7 @@
             // labelDateCheck
             // 
             this.labelDateCheck.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelDateCheck.Location = new System.Drawing.Point(6, 45);
+            this.labelDateCheck.Location = new System.Drawing.Point(12, 45);
             this.labelDateCheck.Name = "labelDateCheck";
             this.labelDateCheck.Size = new System.Drawing.Size(147, 26);
             this.labelDateCheck.TabIndex = 200;
@@ -117,7 +117,7 @@
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(6, 77);
+            this.label2.Location = new System.Drawing.Point(12, 77);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(547, 18);
             this.label2.TabIndex = 203;
@@ -137,7 +137,7 @@
             // label3
             // 
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(6, 141);
+            this.label3.Location = new System.Drawing.Point(10, 141);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(147, 26);
             this.label3.TabIndex = 206;
@@ -178,7 +178,7 @@
             // textBoxAddress
             // 
             this.textBoxAddress.Font = new System.Drawing.Font("Calibri", 10F);
-            this.textBoxAddress.Location = new System.Drawing.Point(6, 188);
+            this.textBoxAddress.Location = new System.Drawing.Point(18, 188);
             this.textBoxAddress.Multiline = true;
             this.textBoxAddress.Name = "textBoxAddress";
             this.textBoxAddress.Size = new System.Drawing.Size(547, 51);
@@ -197,7 +197,7 @@
             // textBoxResultMedCheck
             // 
             this.textBoxResultMedCheck.Font = new System.Drawing.Font("Calibri", 10F);
-            this.textBoxResultMedCheck.Location = new System.Drawing.Point(6, 284);
+            this.textBoxResultMedCheck.Location = new System.Drawing.Point(18, 284);
             this.textBoxResultMedCheck.MaxLength = 150;
             this.textBoxResultMedCheck.Name = "textBoxResultMedCheck";
             this.textBoxResultMedCheck.Size = new System.Drawing.Size(547, 24);
@@ -237,7 +237,7 @@
             // label9
             // 
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label9.Location = new System.Drawing.Point(6, 380);
+            this.label9.Location = new System.Drawing.Point(18, 380);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(547, 26);
             this.label9.TabIndex = 215;
@@ -248,7 +248,7 @@
             // textBoxMedExam
             // 
             this.textBoxMedExam.Font = new System.Drawing.Font("Calibri", 10F);
-            this.textBoxMedExam.Location = new System.Drawing.Point(6, 409);
+            this.textBoxMedExam.Location = new System.Drawing.Point(18, 409);
             this.textBoxMedExam.MaxLength = 150;
             this.textBoxMedExam.Name = "textBoxMedExam";
             this.textBoxMedExam.Size = new System.Drawing.Size(547, 24);
@@ -280,7 +280,7 @@
             // label11
             // 
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label11.Location = new System.Drawing.Point(6, 468);
+            this.label11.Location = new System.Drawing.Point(18, 468);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(441, 26);
             this.label11.TabIndex = 219;
@@ -290,7 +290,7 @@
             // label12
             // 
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label12.Location = new System.Drawing.Point(6, 507);
+            this.label12.Location = new System.Drawing.Point(18, 507);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(547, 26);
             this.label12.TabIndex = 221;
@@ -300,7 +300,7 @@
             // textBoxMDFIO
             // 
             this.textBoxMDFIO.Font = new System.Drawing.Font("Calibri", 10F);
-            this.textBoxMDFIO.Location = new System.Drawing.Point(6, 539);
+            this.textBoxMDFIO.Location = new System.Drawing.Point(18, 539);
             this.textBoxMDFIO.Name = "textBoxMDFIO";
             this.textBoxMDFIO.Size = new System.Drawing.Size(547, 24);
             this.textBoxMDFIO.TabIndex = 11;
@@ -329,7 +329,7 @@
             "Валерий Пироженко",
             "Смаль Евгений Эдуардович",
             "Артур Пирожков"});
-            this.checkedListBoxMD.Location = new System.Drawing.Point(6, 571);
+            this.checkedListBoxMD.Location = new System.Drawing.Point(18, 571);
             this.checkedListBoxMD.Name = "checkedListBoxMD";
             this.checkedListBoxMD.Size = new System.Drawing.Size(544, 67);
             this.checkedListBoxMD.TabIndex = 223;
@@ -370,12 +370,12 @@
             this.groupBoxForm.Size = new System.Drawing.Size(580, 727);
             this.groupBoxForm.TabIndex = 0;
             this.groupBoxForm.TabStop = false;
-            this.groupBoxForm.Text = "Форма № 100-2/о";
+            this.groupBoxForm.Text = "y";
             this.groupBoxForm.Enter += new System.EventHandler(this.groupBoxForm_Enter);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(0, 644);
+            this.button1.Location = new System.Drawing.Point(31, 644);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(120, 57);
             this.button1.TabIndex = 224;
