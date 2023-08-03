@@ -28,9 +28,9 @@ namespace WindowsFormsApp1.WinForms
                 dataGridView1.AllowUserToAddRows = true;
                 dataGridView1.DataSource = result;
                 dataGridView1.Columns[0].Visible = false;
-                dataGridView1.Columns[1].HeaderText = "Фамилия";
+                dataGridView1.Columns[1].HeaderText = "Отчество";
                 dataGridView1.Columns[2].HeaderText = "Имя";
-                dataGridView1.Columns[3].HeaderText = "Отчество";
+                dataGridView1.Columns[3].HeaderText = "Фамилия";
                 dataGridView1.Columns[4].HeaderText = "Ф.И.О.";
                 
                 for (int i = 0; i < dataGridView1.Columns.Count; i++)

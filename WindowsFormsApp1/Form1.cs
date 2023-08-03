@@ -36,11 +36,17 @@ namespace WindowsFormsApp1
             {
                 string medicalDoctors = String.Empty;
                 int i = 0;
-                for (; i < checkedListBoxMD.CheckedItems.Count - 1; i++)
+                if (checkedListBoxMD.CheckedItems.Count > 0)
                 {
-                    medicalDoctors += (checkedListBoxMD.CheckedItems[i] as MDoctor)?.FullName + ", ";
+                    if(textBoxMDFIO.Text.Length > 0) medicalDoctors = textBoxMDFIO.Text + ", " ;
+                    for (; i < checkedListBoxMD.CheckedItems.Count - 1; i++)
+                    {
+                        medicalDoctors += (checkedListBoxMD.CheckedItems[i] as MDoctor)?.FullName + ", ";
+                    }
                 }
-
+                else medicalDoctors = textBoxMDFIO.Text;
+                
+               
                 if(checkedListBoxMD.CheckedIndices.Count > 0) medicalDoctors += (checkedListBoxMD.CheckedItems[i] as MDoctor)?.FullName;
                 var fieldValues = new Dictionary<string, string>
                 {
@@ -77,7 +83,7 @@ namespace WindowsFormsApp1
                         textBoxMedExam.Text
                     },
                     {"R2", comboBoxMedExam.SelectedItem.ToString()},
-                    {"FIODOCTOR", textBoxMDFIO.Text.Length > 0 ? textBoxMDFIO.Text + ", " + medicalDoctors : medicalDoctors}
+                    {"FIODOCTOR", medicalDoctors}
                 };
                 string dir = Application.StartupPath;
                 string path = Path.Combine(dir + ConfigurationManager.AppSettings["templateDocx"]);
@@ -181,19 +187,11 @@ namespace WindowsFormsApp1
             }
         }
 
-        private void groupBoxForm_Enter(object sender, EventArgs e)
+
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-
-        }
-
-        private void textBoxMDFIO_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void checkedListBoxMD_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
+            textBoxResultMedCheck.Text = comboBox1.Items[comboBox1.SelectedIndex].ToString();
         }
     }
 }

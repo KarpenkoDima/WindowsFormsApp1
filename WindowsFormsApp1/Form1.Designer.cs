@@ -58,6 +58,7 @@
             this.buttonPrint = new System.Windows.Forms.Button();
             this.checkedListBoxMD = new System.Windows.Forms.CheckedListBox();
             this.groupBoxForm = new System.Windows.Forms.GroupBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.groupBoxForm.SuspendLayout();
@@ -188,7 +189,7 @@
             // label6
             // 
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label6.Location = new System.Drawing.Point(6, 255);
+            this.label6.Location = new System.Drawing.Point(10, 249);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(547, 26);
             this.label6.TabIndex = 210;
@@ -199,15 +200,16 @@
             // 
             this.textBoxResultMedCheck.Font = new System.Drawing.Font("Calibri", 10F);
             this.textBoxResultMedCheck.Location = new System.Drawing.Point(18, 284);
-            this.textBoxResultMedCheck.MaxLength = 150;
+            this.textBoxResultMedCheck.MaxLength = 120;
+            this.textBoxResultMedCheck.Multiline = true;
             this.textBoxResultMedCheck.Name = "textBoxResultMedCheck";
-            this.textBoxResultMedCheck.Size = new System.Drawing.Size(547, 24);
+            this.textBoxResultMedCheck.Size = new System.Drawing.Size(547, 39);
             this.textBoxResultMedCheck.TabIndex = 7;
             // 
             // label7
             // 
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label7.Location = new System.Drawing.Point(168, 313);
+            this.label7.Location = new System.Drawing.Point(168, 326);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(219, 23);
             this.label7.TabIndex = 212;
@@ -230,7 +232,7 @@
             this.comboBoxResultMedCheck.Items.AddRange(new object[] {
             "1",
             "2"});
-            this.comboBoxResultMedCheck.Location = new System.Drawing.Point(497, 347);
+            this.comboBoxResultMedCheck.Location = new System.Drawing.Point(497, 360);
             this.comboBoxResultMedCheck.Name = "comboBoxResultMedCheck";
             this.comboBoxResultMedCheck.Size = new System.Drawing.Size(40, 28);
             this.comboBoxResultMedCheck.TabIndex = 8;
@@ -238,7 +240,7 @@
             // label9
             // 
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label9.Location = new System.Drawing.Point(18, 380);
+            this.label9.Location = new System.Drawing.Point(18, 392);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(547, 26);
             this.label9.TabIndex = 215;
@@ -249,7 +251,7 @@
             // textBoxMedExam
             // 
             this.textBoxMedExam.Font = new System.Drawing.Font("Calibri", 10F);
-            this.textBoxMedExam.Location = new System.Drawing.Point(18, 409);
+            this.textBoxMedExam.Location = new System.Drawing.Point(18, 421);
             this.textBoxMedExam.MaxLength = 150;
             this.textBoxMedExam.Name = "textBoxMedExam";
             this.textBoxMedExam.Size = new System.Drawing.Size(547, 24);
@@ -258,7 +260,7 @@
             // label10
             // 
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label10.Location = new System.Drawing.Point(158, 438);
+            this.label10.Location = new System.Drawing.Point(158, 450);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(219, 23);
             this.label10.TabIndex = 217;
@@ -303,7 +305,7 @@
             this.textBoxMDFIO.Name = "textBoxMDFIO";
             this.textBoxMDFIO.Size = new System.Drawing.Size(547, 24);
             this.textBoxMDFIO.TabIndex = 11;
-            this.textBoxMDFIO.TextChanged += new System.EventHandler(this.textBoxMDFIO_TextChanged);
+            this.textBoxMDFIO.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // buttonPrint
             // 
@@ -332,10 +334,10 @@
             this.checkedListBoxMD.Name = "checkedListBoxMD";
             this.checkedListBoxMD.Size = new System.Drawing.Size(544, 67);
             this.checkedListBoxMD.TabIndex = 223;
-            this.checkedListBoxMD.SelectedIndexChanged += new System.EventHandler(this.checkedListBoxMD_SelectedIndexChanged);
             // 
             // groupBoxForm
             // 
+            this.groupBoxForm.Controls.Add(this.comboBox1);
             this.groupBoxForm.Controls.Add(this.button1);
             this.groupBoxForm.Controls.Add(this.checkedListBoxMD);
             this.groupBoxForm.Controls.Add(this.buttonPrint);
@@ -369,8 +371,20 @@
             this.groupBoxForm.Size = new System.Drawing.Size(580, 727);
             this.groupBoxForm.TabIndex = 0;
             this.groupBoxForm.TabStop = false;
-            this.groupBoxForm.Text = "y";
-            this.groupBoxForm.Enter += new System.EventHandler(this.groupBoxForm_Enter);
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Діяльності працівника залізничного тр-ту",
+            "Діяльності водія кат.",
+            "Військової служби у ЗСУ з доступом до державної таємниці",
+            "Зберігання, носіння та використання вогнепальної зброї"});
+            this.comboBox1.Location = new System.Drawing.Point(411, 327);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(154, 28);
+            this.comboBox1.TabIndex = 225;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // button1
             // 
@@ -451,5 +465,7 @@
         private System.Windows.Forms.GroupBox groupBoxForm;
 
         #endregion
+
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
