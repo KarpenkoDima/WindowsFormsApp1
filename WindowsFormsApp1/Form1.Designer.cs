@@ -179,6 +179,7 @@
             // 
             this.textBoxAddress.Font = new System.Drawing.Font("Calibri", 10F);
             this.textBoxAddress.Location = new System.Drawing.Point(18, 188);
+            this.textBoxAddress.MaxLength = 201;
             this.textBoxAddress.Multiline = true;
             this.textBoxAddress.Name = "textBoxAddress";
             this.textBoxAddress.Size = new System.Drawing.Size(547, 51);
