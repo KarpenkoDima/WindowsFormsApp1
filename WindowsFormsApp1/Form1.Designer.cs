@@ -271,8 +271,7 @@
             this.comboBoxMedExam.FormattingEnabled = true;
             this.comboBoxMedExam.Items.AddRange(new object[] {
             "1",
-            "2",
-            "3"});
+            "2"});
             this.comboBoxMedExam.Location = new System.Drawing.Point(497, 468);
             this.comboBoxMedExam.Name = "comboBoxMedExam";
             this.comboBoxMedExam.Size = new System.Drawing.Size(40, 28);
@@ -285,8 +284,7 @@
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(441, 26);
             this.label11.TabIndex = 219;
-            this.label11.Text = "наявні — 1, відсутні — 2, обстеження комісією лікарів-психіатрів не проводилось —" +
-    " 3";
+            this.label11.Text = "наявні — 1, відсутні — 2";
             // 
             // label12
             // 
